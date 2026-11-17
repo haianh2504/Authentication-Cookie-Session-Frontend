@@ -17,7 +17,7 @@ export function PageHeader({ active = "gallery" }: PageHeaderProps) {
           <Link className={`site-nav__link${active === "gallery" ? " is-active" : ""}`} href="/gallery" aria-current={active === "gallery" ? "page" : undefined}>
             Thư viện
           </Link>
-          <Link className={`site-nav__admin${active === "admin" ? " is-active" : ""}`} href="/admin/login">
+          <Link className={`site-nav__admin${active === "admin" ? " is-active" : ""}`} href="/admin/gallery">
             <span>Quản trị</span><span aria-hidden="true">↗</span>
           </Link>
         </nav>

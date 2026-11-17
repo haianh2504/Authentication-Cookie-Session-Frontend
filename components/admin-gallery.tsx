@@ -53,8 +53,8 @@ export function AdminGallery() {
         void loadImages();
       }
       else {
-        setAuthState("redirected");
-        router.replace("/admin/login");
+        setAuthError("Máy chủ chưa xác nhận phiên quản trị. Vui lòng thử lại.");
+        setAuthState("error");
       }
     }).catch((cause: unknown) => {
       if (!active) return;
